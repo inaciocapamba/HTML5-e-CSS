@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(208, 240, 208);
+}
+
+main{
+    background-color: rgb(187, 187, 247);
+    width: 600px;
+    box-shadow: 5px 5px 5px;
+    text-align: center;
+    margin: auto;
+    border-radius: 1%;
+}
+
+h1{
+    color: rgb(96, 163, 96);
+}
+
+#principal{
+    color: white;
+}
+
+h2{
+    color: rgba(156, 175, 26, 0.893);
+}
+
+.aprendendo{
+    color: black;
+}
+
+.basico{
+    color: red;
+}
+
+.intermediario{
+    color: rgb(135, 135, 54);
+}
+
+.avancado{
+    color: green;
+}
