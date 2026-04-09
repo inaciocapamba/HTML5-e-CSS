@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            width: 300px;
+            border-collapse: collapse;
+            /*Cabeçalho Fixo*/
+            position: relative;
+        }
+
+        table > thead {
+            position: sticky;
+            top: -1px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th style="width: 50px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45.919.049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21.168.791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17.264.943</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">34.873.500</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11.433.890</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11.377.762</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td>9.557.071</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>9.132.078</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td>8.602.865</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td>7.075.101</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td>7.018.354</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td>4.144.597</td>
+                </tr>
+                <tr>
+                    <td>Espirito Santos</td>
+                    <td>4.018.127</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td>4.018.650</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total de Habitantes</th>
+                    <td class="num"><strong>000.000.000</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+        <p style="width: 400px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed veniam corrupti ratione rem deserunt sequi, est provident facilis nostrum fugit mollitia quo, adipisci placeat saepe earum unde labore. Enim. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente non, quis doloribus, <br>hic veritatis a nulla inventore error fuga voluptate cum dolores, est dignissimos ab quas accusantium rem enim! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quisquam, saepe maiores, qui necessitatibus maxime ut ratione corrupti eos cumque tenetur, dolor nihil fugit aut expedita rerum perspiciatis molestias nulla!</p>
+
+        <p style="width: 400px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed veniam corrupti ratione rem deserunt sequi, est provident facilis nostrum fugit mollitia quo, adipisci placeat saepe earum unde labore. Enim. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum sapiente non, quis doloribus, <br>hic veritatis a nulla inventore error fuga voluptate cum dolores, est dignissimos ab quas accusantium rem enim! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quisquam, saepe maiores, qui necessitatibus maxime ut ratione corrupti eos cumque tenetur, dolor nihil fugit aut expedita rerum perspiciatis molestias nulla!</p>
+</body>
+</html>
